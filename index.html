@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>TurboRec™ – a lightweight OBS Studio clone for low-end PCs</title>
 <meta name="description" content="TurboRec™ is a Python-based OBS Studio clone built for low-end PCs, with Adaptive Recording™: record in 720p, upscale to 1080p.">
+<!-- Discord / social link embed: keep this block at the TOP of <head> so crawlers see it first -->
+<link rel="canonical" href="https://turborec.qd.je/">
+<meta name="theme-color" content="#ff2a2a">
+<meta property="og:site_name" content="TurboRec™">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://turborec.qd.je/">
+<meta property="og:title" content="TurboRec™ – Lightweight OBS Studio Clone">
+<meta property="og:description" content="A Python-based OBS Studio clone built for low-end PCs with 720p to 1080p Adaptive Recording™.">
+<meta property="og:image" content="https://turborec.qd.je/Image.png?v=2">
+<meta property="og:image:secure_url" content="https://turborec.qd.je/Image.png?v=2">
+<meta property="og:image:type" content="image/png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="TurboRec™ – a lightweight OBS Studio clone for low-end PCs">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="TurboRec™ – Lightweight OBS Studio Clone">
+<meta name="twitter:description" content="A Python-based OBS Studio clone built for low-end PCs with 720p to 1080p Adaptive Recording™.">
+<meta name="twitter:image" content="https://turborec.qd.je/Image.png?v=2">
 <link rel="icon" type="image/png" href="data:image/png;base64,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">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -257,16 +275,6 @@ footer .by{font-size:20px;color:#fff}
 @keyframes trkin{from{clip-path:circle(0 at var(--vx,50%) var(--vy,0))}to{clip-path:circle(150vmax at var(--vx,50%) var(--vy,0))}}
 @media(prefers-reduced-motion:reduce){.tpill,.tb{transition:none}}
 </style>
-<!-- Discord / Social Embed Preview -->
-<meta property="og:title" content="TurboRec™ – Lightweight OBS Studio Clone" />
-<meta property="og:description" content="A Python-based OBS Studio clone built for low-end PCs with 720p to 1080p Adaptive Recording™." />
-<meta property="og:image" content="https://turborec.qd.je/Image.png" />
-<meta property="og:url" content="https://turborec.qd.je" />
-<meta property="og:type" content="website" />
-
-<!-- Makes Discord show a large banner image instead of a tiny thumbnail -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="theme-color" content="#ff2a2a" />
 </head>
 <body>
 <header>
